@@ -2,7 +2,7 @@
      H* SALES MANAGEMENT SYSTEM :  Calendar - Date calculation        */
      H*****************************************************************/
      H*****************************************************************/
-     H*IDP*  16/09/2024 22:49 B                                        */
+     H*IDP*  16/09/2024 22:49 B  18/09                                */
      H*  09/01/95 : A900 : Call off and inspection procedures         */
      H*  13/04/95 : C702 : Corrections III                            */
      H*  29/06/95 : A719 : Add country to Calendar                    */
