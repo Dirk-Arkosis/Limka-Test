@@ -1,0 +1,20 @@
+name: Source Orbit Impact Report
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  so-impact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - run: npm i -g @ibm/sourceorbit
+      - run: npm i -g @ibm/ibmi-ci
+      - name: Generate impact information
+        run: so -bf imd -l `git diff --name-only origin/main origin/${GITHUB_HEAD_REF}`
+      - name: Adding markdown
+        run: cat impact.md >> $GITHUB_STEP_SUMMARY
