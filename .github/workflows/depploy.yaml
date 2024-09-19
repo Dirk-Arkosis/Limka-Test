@@ -7,7 +7,7 @@ on:
 
 jobs:
   ibmi-build:
-    environment: COMMON1
+    environment: Environment-Test
     runs-on: ubuntu-latest
     permissions:
       packages: read
