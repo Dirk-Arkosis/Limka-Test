@@ -7,7 +7,7 @@ on:
 
 jobs:
   ibmi-build:
-    environment: Environment-Test
+    environment: TESTENV
     runs-on: ubuntu-latest
     permissions:
       packages: read
