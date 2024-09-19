@@ -1,4 +1,4 @@
-name: Source Orbit Impact Report
+name: Deploy
 
 on:
   push:
